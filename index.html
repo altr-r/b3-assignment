@@ -42,20 +42,20 @@
     </script>
   </head>
   <body>
-    <header>
+    <header class="bg-background">
       <!--Navigation Section-->
-      <nav class="bg-background mx-auto px-5 md:px-12">
+      <nav class="md:container mx-auto">
         <div class="navbar font-sora">
           <div class="navbar-start gap-3 items-center">
             <img src="c1-assets/logo-header.png" alt="" />
-            <p class="font-sora font-normal text-2xl hidden md:inline">
+            <p class="font-sora font-normal text-2xl hidden md:flex">
               Browse<span class="font-sora font-normal text-2xl text-[#FFDC26]"
                 >4</span
               >Pets
             </p>
           </div>
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
+            <ul class="gap-8 menu-horizontal px-1 text-lg">
               <li><a>Find a pet</a></li>
               <li><a>Breeds</a></li>
               <li><a>Contact us</a></li>
@@ -64,24 +64,11 @@
           <div class="navbar-end">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
+                <i class="fa-solid fa-bars"></i>
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-28 p-2 shadow transform -translate-x-1/2"
               >
                 <li><a>Find a pet</a></li>
                 <li><a>Breeds</a></li>
@@ -95,12 +82,12 @@
               </div>
               <div class="flex gap-3">
                 <button
-                  class="btn hidden border-[#FFDC26] hover:bg-[#FFDC26] bg-background md:flex font-normal"
+                  class="btn hidden border-[#FFDC26] hover:bg-[#FFDC26] bg-background hover:text-background md:flex font-normal text-lg px-6"
                 >
                   Login
                 </button>
                 <button
-                  class="btn hidden bg-[#FFDC26] hover:bg-background hover:border-[#FFDC26] font-normal md:flex"
+                  class="btn hidden bg-[#FFDC26] hover:bg-background hover:border-[#FFDC26] font-normal md:flex text-lg px-8"
                 >
                   Register
                 </button>
