@@ -23,6 +23,11 @@
       href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <!--W3-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!--Tailwind config-->
     <script>
       tailwind.config = {
@@ -219,7 +224,7 @@
           Trending Pet Products
         </h1>
         <!--Bottom-->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
           <!--Left-->
           <div
             class="bg-[#FFE9A0] rounded-lg p-6 col-span-1 md:col-span-2 lg:col-span-1"
@@ -508,8 +513,81 @@
       </section>
 
       <!--FAQ-->
-      <section class="mt-20 lg:pt-20"></section>
+      <section class="mt-20 lg:pt-20">
+        <h1 class="font-adlam font-bold text-2xl mb-12">
+          Frequently Asked Questions
+        </h1>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-xl font-medium font-sora">
+            Are the products refundable?
+          </div>
+          <div class="collapse-content font-sora">
+            <p>Subject to circumstances</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium font-sora">
+            Are there any offers available?
+          </div>
+          <div class="collapse-content font-sora">
+            <p>
+              You will see an animation at the top of the website if sales are
+              ongoing
+            </p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium font-sora">
+            Are the products 100% pet friendly?
+          </div>
+          <div class="collapse-content font-sora">
+            <p>Yes</p>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="bg-[#e1dc2680] mx-auto px-5 md:px-10 mt-20 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="space-y-4">
+          <div class="flex items-center gap-2">
+            <span> <img src="c1-assets/logo-footer.png" alt="" /> </span>
+            <h3 class="sora">
+              Browse<span class="text-yellow-400 text-2xl">4</span>Pets
+            </h3>
+          </div>
+          <p class="text-gray-600 sora">
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends
+          </p>
+        </div>
+        <div class="space-y-4">
+          <div class="space-y-2 mx-auto">
+            <a href="#" class="block hover:text-gray-600 sora">Find a pet</a>
+            <a href="#" class="block hover:text-gray-600 sora">Breeds</a>
+            <a href="#" class="block hover:text-gray-600 sora">Contact us</a>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <h3 class="font-bold sora">Follow Us</h3>
+          <div class="flex gap-4">
+            <a>
+              <i class="fa fa-facebook-f"></i>
+            </a>
+            <a>
+              <i class="fa fa-youtube-play"></i>
+            </a>
+            <a>
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a>
+              <i class="fa fa-twitter-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
