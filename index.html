@@ -31,6 +31,7 @@
             colors: {
               clifford: "#da373d",
               background: "#FFF9F4",
+              complementary: "#FFDC26",
             },
             fontFamily: {
               adlam: ["ADLaM Display"],
@@ -42,9 +43,9 @@
     </script>
   </head>
   <body>
-    <header class="bg-background">
+    <header>
       <!--Navigation Section-->
-      <nav class="md:container mx-auto">
+      <nav class="bg-background mx-auto px-5 md:px-10">
         <div class="navbar font-sora">
           <div class="navbar-start gap-3 items-center">
             <img src="c1-assets/logo-header.png" alt="" />
@@ -68,7 +69,7 @@
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-28 p-2 shadow transform -translate-x-1/2"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-26 p-2 shadow transform -translate-x-1/2"
               >
                 <li><a>Find a pet</a></li>
                 <li><a>Breeds</a></li>
@@ -97,9 +98,29 @@
         </div>
       </nav>
       <!--Banner Section-->
-      <section></section>
+      <section class="mt-14 mx-auto px-5 md:px-10">
+        <div class="flex flex-col md:flex-row">
+          <div class="text-left">
+            <h1 class="font-adlam font-bold text-3xl">
+              Pamper Your Pet,<br />Because They Deserve<br />the Best
+            </h1>
+            <br />
+            <p class="text-gray-500">
+              Discover a world of treats, toys, and essentials handpicked for
+              your furry friends. Shop now and make tails wag with joy!
+            </p>
+            <br />
+            <button class="btn bg-complementary font-normal text-xl">
+              Find a pet
+            </button>
+          </div>
+          <div class="">
+            <img src="c1-assets/cat-big.png" alt="" />
+          </div>
+        </div>
+      </section>
     </header>
-    <main></main>
+    <main class="md:container mx-auto"></main>
     <footer></footer>
   </body>
 </html>
